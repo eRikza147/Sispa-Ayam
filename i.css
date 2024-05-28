@@ -1,0 +1,761 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*css reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*css clearfix float*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body {
+	background-image: url(user/seigaiha.png);
+	font-family: arial, sans-serif;
+	color: #333;
+}
+.select {
+	width: 200px; /* Lebar input select */
+  	padding: 8px; /* Padding untuk tata letak yang nyaman */
+  	font-size: 16px; /* Ukuran font */
+  	border: 1px solid #ccc; /* Garis batas dengan warna abu-abu */
+  	border-radius: 4px; /* Sudut bulat */
+  	outline: none; 
+}
+
+.container {
+	width: 960px;
+	margin: auto;
+	background-color: #fff;
+/*	border-left: 3px dashed #333;
+	border-right: 3px dashed  #333;*/
+	box-sizing: border-box;
+
+}
+
+.contenta {
+	width: 900px;
+	height: 100vh;
+	box-sizing: border-box;
+	margin: auto;
+}
+
+.contenta h1{
+	margin: 100px auto;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #333;
+}
+
+.aplo1 {
+	background-color: skyblue;
+	border-radius: 10px;
+	width: 200px;
+	height: 80px;
+	float: left;
+	margin: 20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.aplo2 {
+	background-color: skyblue;
+	border-radius: 10px;
+	width: 200px;
+	height: 80px;
+	float: left;
+	margin: 20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.aplo3 {
+	background-color: skyblue;
+	border-radius: 10px;
+	width: 320px;
+	height: 80px;
+	float: left;
+	margin: 20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.jumlah h1 {
+	font-size: 20px;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.jumlah img {
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 25px;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.jumlah {
+	margin: 20px auto;
+}
+
+/*css pd header*/
+.header {
+	padding: 25px;
+	background-color: skyblue;
+	border-bottom: 5px solid lightblue;
+}
+
+.header h1 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.header ul li {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+
+.header li a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #333;
+	padding: 4px;
+}
+
+.header a:hover {
+	background-color: lightblue;
+	border-radius: 5px;
+}
+
+.header select {
+	border: none;
+	background-color: skyblue;
+	text-decoration: none;
+	font-size: 18px;
+	color: #333;
+
+}
+
+/*foto pd hal dasboard*/
+.ayam {
+	height: 300px;
+	background-image: url(user/ayam.jpg);
+	background-size: cover;
+	background-position: 0 -190px;
+	border-bottom: 5px solid lightblue;
+}
+
+/*css pd hal dasboard-main*/
+.main {
+	width: 600px;
+	padding: 20px;
+	box-sizing: border-box;
+	float: left;
+	height: 100vh;
+}
+
+.main h2{
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.main .isi {
+	font-size: 14px;
+	margin-top: 5px;
+	line-height: 25px;
+	text-align: justify;
+}
+.main p {
+	margin-bottom: 20px;
+	text-indent: 30px;
+}
+
+/*css pd dasboard-about*/
+.about {
+	width: 300px;
+	padding: 20px;
+	box-sizing: border-box;
+	float: right;	
+	height: 100vh;
+}
+
+.about h2{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.about img {
+	width: 70px;
+	height: 70px;
+	float: left;
+	padding-right: 10px;
+}
+
+
+.about p {
+	font-size: 12px;
+	margin-bottom: 20px;
+	line-height: 20px;
+	text-align: justify;
+}
+
+/*css pada footer*/
+.footer { 
+	padding: 12px; 
+	background-color: #333; 
+
+}
+.footer p {
+	font-size: 12px;
+	color: #eaeaea;
+	text-align: center;
+}
+
+/*css pd hal login*/
+.login {
+	width: 500px;
+	background-color: white;
+	margin:150px auto;
+	border: 4px dashed lightblue;
+}
+
+.login h1{
+	font-size: 28px;
+	text-align: center;
+	padding: 20px;
+	margin-top: 15px;
+}
+
+.login h2{
+	font-size: 15px;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+
+.login table {
+	margin: 10px auto 30px;
+	
+}
+.login table td {
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	border: none;
+}
+
+.login input {
+	padding: 8px;
+	border: none;
+	border-bottom: 1px solid #333;
+	font-size: 15px;
+}
+.login button{
+	border: none;
+	width: 90px;
+	padding: 10px;
+	font-size: 20px;
+	color: #333;	
+	background-color: skyblue;
+	margin-right: 20px;
+	margin-left: 20px;
+	border-radius: 5px;
+}
+
+.login a {
+	font-size: 20px;
+	text-decoration: none;
+	color: #333;
+}
+
+.login .daftar{
+	font-size: 15px;
+	padding: 0;
+	color: darkblue;
+}
+
+.login button:hover {
+	background-color: lightblue;
+}
+
+/*css pd hal daftar penyakit*/
+.daftar {
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.kotak {
+	margin: 20px auto;
+	width: 900px;
+	height: 300px;
+	box-sizing: border-box;
+	box-shadow: 1px 5px 25px 2px rgba(0, 0, 0, .1);
+	padding: 10px;
+}
+
+.daftar h2{
+	font-size: 28px;
+	font-weight: bold;
+	margin-left:10px ;
+	margin-bottom: 25px;
+	text-decoration: underline;
+}
+
+.imgpenyakit {
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 20px;
+		margin-bottom: 20px;
+	box-sizing: border-box;
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 5px;
+}
+
+.kotak h1 {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 2px 10px 10px;
+	float: left;
+}
+
+.kotak h3 {
+	font-size: 18px;
+	font-weight: bold;
+	font-style: oblique;
+	padding: 11px 2px;
+	margin-left: 2px;
+}
+
+.kotak p {
+	font-size: 18px;
+	text-align: justify;
+	text-indent: 20px;
+	padding-bottom:10px;
+	line-height: 20px;
+
+}
+/*.info button  {
+	border: none;
+	padding: 6px;
+	color: #333;	
+	background-color: skyblue;
+	margin: 6px 95px;
+	border-radius: 5px;
+}
+.info a {
+	font-size: 13px;
+	text-decoration: none;
+	color: #333;
+}
+
+.info button:hover {
+	background-color: lightblue;
+}*/
+
+/*css hal conten admin*/
+.contadmin {
+	padding: 20px;
+ 	box-sizing: border-box;
+ 	height: 100%;
+
+}
+
+.contadmin table {
+	width: 900px;
+	box-sizing: border-box;
+	margin: auto;
+	overflow: auto;
+}
+.contadmin tr th, td{
+	border: 3px solid #333;
+	padding: 5px;
+	text-align: center;
+}
+
+.contadmin button {
+	width: 55px;
+	border: none;	
+	padding: 10px;
+	background-color: skyblue;
+	border-radius: 5px;
+}
+
+.contadmin a {
+	color: #333;
+	text-decoration: none;
+}
+
+.contadmin button:hover {
+	background-color: lightblue;
+}
+
+/*css tombol tambah data*/
+.bttambah {
+	margin-bottom: 30px;
+	margin-left: 10px;
+}
+
+.bttambah a {
+	padding: 10px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #333;	
+	background-color: skyblue;
+	border-radius: 5px; 
+}
+
+.bttambah a:hover {
+	background-color: lightblue;
+}
+
+/*css pd hal tambah data*/
+.tambahdata {
+	width: 500px;
+	background-color: white;
+	margin:150px auto;
+	border: 4px dashed lightblue;
+}
+
+.penyakit {
+	width: 800px;
+}
+
+.tambahdata	 h2{
+	font-size: 28px;
+	text-align: center;
+	padding: 20px;
+	margin-top: 15px;
+}
+
+.tambahdata	 table {
+	margin: 10px auto 30px;	
+}
+
+.tambahdata	 table td {
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	border: none;
+}
+
+.tambahdata	 input {
+	padding: 8px;
+	border: none;
+	border-bottom: 1px solid #333;
+	font-size: 15px;
+}
+
+.tambahdata button {
+	border: none;
+	width: 90px;
+	padding: 10px;
+	font-size: 20px;
+	color: #333;	
+	background-color: skyblue;
+	margin-right: 20px;
+	margin-left: 20px;
+	border-radius: 5px;
+}
+
+.tambahdata textarea {
+	width: 400px;
+	height: 250px;
+}
+
+.tambahdata	 a {
+	text-decoration: none;
+	color: #333;
+}
+.tambahdata button:hover {
+	background-color: lightblue;
+}
+
+/*css pd hal ubah data*/
+.ubahdata {
+	width: 500px;
+	background-color: white;
+	margin:150px auto;
+	border: 4px dashed lightblue;
+}
+
+.penyakit {
+	width: 800px;
+	margin-top: 50px;
+}
+.ubahdata h2{
+	font-size: 28px;
+	text-align: center;
+	padding: 20px;
+	margin-top: 15px;
+}
+
+.ubahdata table {
+	margin: 10px auto 30px;
+	
+}
+.ubahdata table td {
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	border: none;
+}
+
+.ubahdata input {
+	padding: 8px;
+	border: none;
+	border-bottom: 1px solid #333;
+	font-size: 15px;
+}
+
+.ubahdata button {
+	border: none;
+	width: 90px;
+	padding: 10px;
+	font-size: 20px;
+	color: #333;	
+	background-color: skyblue;
+	margin-right: 20px;
+	margin-left: 20px;
+	border-radius: 5px;
+}
+
+.ubahdata textarea {
+	width: 400px;
+	height: 250px;
+}
+
+.ubahdata a {
+	text-decoration: none;
+	color: #333;
+}
+.ubahdata button:hover {
+	background-color: lightblue;
+}
+
+/*css pd hal diagnosa*/
+.tampilgejala{
+	margin: 20px 50px;
+
+}
+.tampilgejala h1{
+	margin: 20px;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.cexbox {
+	margin-left: 20px;
+}
+
+.btncek {
+	border: none;
+	width: 150px;
+	padding: 10px;
+	font-size: 15px;
+	color: #333;	
+	background-color: skyblue;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	margin-right: 20px;
+	margin-left: 20px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.btncek:hover{
+	background-color: lightblue;
+
+}
+
+.tampiltabel table{
+	text-align: left;
+	margin: 35px 60px;
+	box-sizing: border-box;
+	width: 650px;
+}
+.tampiltabel tr td{container: ;
+	border: none;
+	text-align: left;
+
+}
+
+.tampiltabel textarea{
+	width: 650px;
+	height: 260px;
+	text-align: justify;
+	font-size: 15px;
+	text-indent: 25px;
+	margin-top: 10px;
+	margin-left: 20px;
+	border: none;
+	background-color: rgba(169, 169, 169, 0.1);
+	border-radius: 5px;
+	box-shadow: inset 0 1px 10px rgba(0,0,0,.085);
+	padding: 10px;
+	line-height: 30px;
+
+}
+
+.tampiltabel input{
+	height: 25px;
+	font-size: 15px;
+	border: none;
+	text-indent: 15px;
+	width: 150px;
+	box-shadow: inset 0 1px 4px rgba(0,0,0,.085); 
+	background-color: rgba(169, 169, 169, 0.1);
+	border-radius: 5px;
+}
+
+.tampiltabel label {
+	font-weight: bold;
+}
+
+.laporan {
+	margin: 50px 50px;
+	width: 900px;
+	height: 100vh;
+}
+.laporan .tabel{
+	float: left;
+	width: 450px;
+} 
+.laporan .tabel td{
+	padding: 10px;
+}
+.laporan .chart{
+	width: 350px;
+	height: 350px;
+	float: right;
+}
+
+.tandatangan table{
+	margin-bottom: px;
+	margin-right: 50px;
+	float: right;
+}
+
+.tandatangan tr td{
+	border: none;
+}
+
+.proses{
+	padding: 25px;
+	margin: 15px 40;
+}
+
+.proses h3{
+	font-size: 18px;
+	margin-left: 35px;
+	font-weight: bold;
+}
+
+.proses h4{
+	font-size: 20px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.proses .tampiltabel .table1{
+	text-align: left;
+	margin: 35px 60px;
+	box-sizing: border-box;
+	width: 450px;
+}
+
+.proses .tampiltabel .table2{
+	text-align: left;
+	margin: 35px 60px;
+	box-sizing: border-box;
+	width: 750px;
+}
+.tampiltabel tbody tr td{
+	padding: 15px;
+	font-size: 15px;
+	border: 1px solid #aeaeae;
+	box-shadow: inset 0 1px 4px rgba(0,0,0,.085); 
+	background-color: rgba(169, 169, 169, 0.1);
+	border-radius: 1px;
+	text-align: justify;
+}
+
+.cexbox1{
+	margin: 10px 30px;
+	width: 650px;
+}
+.cexbox1 .tabelcex tbody tr td{
+
+	border: none;
+	padding: 5px 10px;
+	padding-bottom: ;
+	text-align: left;
+	width: 500px;
+}
